@@ -1,0 +1,8 @@
+{"name": "GIF Search",
+    "short_name": "Giphy",
+    "start_url": "index.html",
+    "display": "standalone",
+    
+    "background_color": "#fff",
+    "description": "news"
+  }

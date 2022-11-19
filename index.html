@@ -1,0 +1,54 @@
+<!--by Shrey Asthana-->
+<!doctype html>
+<html>
+	<head>
+
+		<title>GIF Search Engine</title>
+		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="manifest" href="manifest.json">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="header">
+			<div class="hright">
+  				<p>For Collaborations - <a href="mailto:shreyasthana545@gmail.com">shreyasthana545@gmail.com</a></p>
+				  <p class = "about"><a href="https://github.com/iam-shreyasthana">About The Developer</a></p>
+  			</div>
+  			<div class="hleft">
+				<p><h2>GIF SEARCH ENGINE</h2></p> 
+  			</div>
+  		</div>
+		<div class="container container-padding50">
+			<input type="text" class="js-userinput container-textinput" placeholder="Enter type of GIF to search..." />
+			<button class="js-go container-button button"><span><i class="fa fa-search"></i></span></button>
+			
+		</div>
+		
+		
+		<div class="container container-padding50 js-container">
+
+		</div>
+		
+		<div class="footer">
+  			<p>&copy2022 , Shrey Asthana</p>
+		</div>
+
+		<script src="javascript/main.js"></script>
+		<script>
+			if ('serviceWorker' in navigator) {
+			  console.log('CLIENT: service worker registration in progress.');
+			  navigator.serviceWorker.register('serving-worker-api.js').then(function() {
+				console.log('CLIENT: service worker registration complete.');
+			  }, function() {
+				console.log('CLIENT: service worker registration failure.');
+			  });
+			} else {
+			  console.log('CLIENT: service worker is not supported.');
+			}
+		</script>
+
+
+	</body>
+</html>
